@@ -40,6 +40,16 @@ The following tools were used:
 
 The goal was therefore to build a complete image classification system using manually extracted visual descriptors and a classical machine learning model, while also gaining a deeper understanding of the principles behind image recognition.
 
+## Dataset
+
+The dataset contains images from two classes:
+- **Cat** → label `0`
+- **Dog** → label `1`
+
+Total number of images: **18,000**
+
+The dataset was split into training and validation sets for model development and evaluation.
+
 ## Experiments
 
 Two experiments were conducted using different image sizes.
