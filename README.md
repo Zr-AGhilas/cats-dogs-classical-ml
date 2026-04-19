@@ -37,3 +37,26 @@ The final prediction function is:
 
 ```python
 cats_dogs_classification(image)
+
+
+## Quick Test on a Validation Image
+
+The notebook also includes a quick visual test on one validation image to verify that the final function works correctly on a single sample.
+
+```python
+idx = 0
+sample_path = val_paths[idx]
+true_label = y_val[idx]
+pred_label = cats_dogs_classification(sample_path)
+
+label_to_name = {0: "Cat", 1: "Dog"}
+img = load_rgb_image(sample_path)
+
+plt.figure(figsize=(5, 5))
+plt.imshow(img)
+plt.title(
+    f"True: {label_to_name[true_label]} ({true_label}) | "
+    f"Predicted: {label_to_name[pred_label]} ({pred_label})"
+)
+plt.axis("off")
+plt.show()
