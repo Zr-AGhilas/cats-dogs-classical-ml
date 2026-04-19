@@ -39,6 +39,14 @@ The **128×128 configuration** achieved the best performance and was selected as
 - `report.pdf` — project report
 - `images/quick_test.png` — example of a quick prediction test
 
+## Quick Test on a Validation Image
+
+The notebook includes a quick visual test on one validation image to verify that the final prediction function works correctly on a single sample.
+
+### Example Output
+
+![Quick Test](images/quick_test.png)
+
 ## Final Prediction Function
 
 The final prediction function is:
