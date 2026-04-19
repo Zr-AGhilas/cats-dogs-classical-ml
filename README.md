@@ -4,7 +4,8 @@ This project solves a binary image classification problem: classify an image as 
 
 ## Project Overview
 
-The pipeline is based on:
+The classification pipeline is based on the following steps:
+
 - HOG (Histogram of Oriented Gradients)
 - LBP (Local Binary Patterns)
 - Color Histograms
@@ -12,28 +13,31 @@ The pipeline is based on:
 - PCA
 - SVM
 
+The goal was to design a complete image classification system using handcrafted features and a classical machine learning model.
+
 ## Experiments
 
-Two experiments were conducted with different image sizes:
+Two experiments were conducted using different image sizes.
 
-### Experiment 1 — 64×64
+### Experiment 1 — 64×64 images
 - Accuracy: **0.7808**
 - Precision: **0.7897**
 - Recall: **0.7657**
 - F1-score: **0.7775**
 
-### Experiment 2 — 128×128
+### Experiment 2 — 128×128 images
 - Accuracy: **0.8029**
 - Precision: **0.8086**
 - Recall: **0.7939**
 - F1-score: **0.8012**
 
-The **128×128 configuration** gave the best results and was selected as the final model.
+The **128×128 configuration** achieved the best performance and was selected as the final model.
 
 ## Files
 
-- `notebook.ipynb` — implementation of the full pipeline
+- `notebook.ipynb` — implementation of the full machine learning pipeline
 - `report.pdf` — project report
+- `images/quick_test.png` — example of a quick prediction test
 
 ## Final Prediction Function
 
